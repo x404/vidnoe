@@ -21,6 +21,16 @@ $(document).ready(function(){
 		dots: true
 	});
 
+	$('#actions-slider').slick({
+		slidesToShow: 3,
+		slidesToScroll: 2,
+		prevArrow: '',
+		nextArrow: '',
+		autoplay: false,
+		autoplaySpeed: 4000,
+		dots: true
+	});
+
 	// mobile-menu
 	$('#navbar').each(function(){
 		var $this = $(this),

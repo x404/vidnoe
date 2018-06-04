@@ -147,7 +147,7 @@
 	.flat{
 		margin-right: 33px;
 		margin-bottom: 32px;
-		width: 264px;
+		width: 270px;
 		&__pic{
 			img{
 				display: block;
@@ -187,28 +187,28 @@
 			text-transform: uppercase;
 		}
 
-		.btn{
-			transition: .3s background-color;
-			background: $color6;
-			border: none;
-			color: $color2;
-			font-family: "SegoeUIBoldItalic";
-			width: 215px;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			text-align: center;
-			height: 40px;
-			border-radius: 40px;
-			font-size: 17px;
-			cursor: pointer;
-			&:hover{
-				background-color: red;
-			}
-		}
 	}
 }
 
+.btn-more{
+	transition: .3s background-color;
+	background: $color6;
+	border: none;
+	color: $color2;
+	font-family: "SegoeUIBoldItalic";
+	width: 215px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	height: 40px;
+	border-radius: 40px;
+	font-size: 17px;
+	cursor: pointer;
+	&:hover{
+		background-color: red;
+	}
+}
 
 
 // Tabbable tabs
@@ -245,34 +245,6 @@
 		justify-content: space-between;
 		flex-wrap: wrap;
 	}
-	.slick-dots{
-		display: flex;
-		justify-content: center;
-		margin-top: 18px;
-		li{
-			margin: 0 7px;
-		}
-		button{
-			background-color: #ccc;
-			border-radius: 50%;
-			border: none;
-			cursor: pointer;
-			display: block;
-			font-size: 0;
-			height: 12px;
-			line-height: 0;
-			transition: .3s background-color;
-			width: 12px;
-			&:hover{
-				background-color: red;				
-			}
-		}
-		.slick-active{
-			button{
-				background-color: red;
-			}
-		}
-	}
 }
 .review{
 	&__cell{
@@ -291,3 +263,95 @@
 		}
 	}
 }
+
+
+.slick-dots{
+	display: flex;
+	justify-content: center;
+	margin-top: 18px;
+	li{
+		margin: 0 7px;
+	}
+	button{
+		background-color: #ccc;
+		border-radius: 50%;
+		border: none;
+		cursor: pointer;
+		display: block;
+		font-size: 0;
+		height: 12px;
+		line-height: 0;
+		transition: .3s background-color;
+		width: 12px;
+		&:hover{
+			background-color: red;				
+		}
+	}
+	.slick-active{
+		button{
+			background-color: red;
+		}
+	}
+}
+
+
+
+/* =action
+---------------------------*/
+.action{
+	&__item{
+		margin-left: auto;
+		margin-right: auto;
+		width: 352px;
+	}
+	&__pic{
+
+	}
+	&__price,
+	&__title{
+		color: $color1;
+		font-size: 18px;
+		font-family: "SegoeUIBold";
+	}
+
+	&__body{
+		background-color: $color2;
+		padding: 20px 15px 18px;
+		height: 315px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__title{
+		margin-top: 15px;
+	}
+
+	&__price{
+		margin: 20px 0;
+	}
+
+	&__text{
+		font-size: 17px;
+		padding-left: 10px;
+	}
+
+	&__bottom{
+		flex-grow: 1;
+		display: flex;
+		justify-content: flex-end;
+		flex-direction: column;
+		p{
+			color: $color1;
+			font-size: 18px;
+			font-family: "SegoeUIBold";
+			text-transform: uppercase;
+		}
+		.btn-more{
+			margin-top: 25px;
+		}
+	}
+}
+
+
+/* =/action
+---------------------------*/

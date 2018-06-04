@@ -357,7 +357,7 @@ header {
 .flats .flat {
   margin-right: 33px;
   margin-bottom: 32px;
-  width: 264px; }
+  width: 270px; }
   .flats .flat__pic img {
     display: block; }
   .flats .flat__body {
@@ -381,23 +381,24 @@ header {
     font-family: "SegoeUIBold";
     margin: 15px 0;
     text-transform: uppercase; }
-  .flats .flat .btn {
-    transition: .3s background-color;
-    background: #b3b3b3;
-    border: none;
-    color: #fff;
-    font-family: "SegoeUIBoldItalic";
-    width: 215px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    height: 40px;
-    border-radius: 40px;
-    font-size: 17px;
-    cursor: pointer; }
-    .flats .flat .btn:hover {
-      background-color: red; }
+
+.btn-more {
+  transition: .3s background-color;
+  background: #b3b3b3;
+  border: none;
+  color: #fff;
+  font-family: "SegoeUIBoldItalic";
+  width: 215px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  height: 40px;
+  border-radius: 40px;
+  font-size: 17px;
+  cursor: pointer; }
+  .btn-more:hover {
+    background-color: red; }
 
 .tab-content > .tab-pane {
   display: none; }
@@ -416,28 +417,6 @@ header {
   justify-content: space-between;
   flex-wrap: wrap; }
 
-#reviews-slider .slick-dots {
-  display: flex;
-  justify-content: center;
-  margin-top: 18px; }
-  #reviews-slider .slick-dots li {
-    margin: 0 7px; }
-  #reviews-slider .slick-dots button {
-    background-color: #ccc;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    display: block;
-    font-size: 0;
-    height: 12px;
-    line-height: 0;
-    transition: .3s background-color;
-    width: 12px; }
-    #reviews-slider .slick-dots button:hover {
-      background-color: red; }
-  #reviews-slider .slick-dots .slick-active button {
-    background-color: red; }
-
 .review__cell {
   line-height: 1.8;
   margin-bottom: 15px;
@@ -451,6 +430,72 @@ header {
     .review__cell a:hover {
       background-color: #ccc; }
 
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px; }
+  .slick-dots li {
+    margin: 0 7px; }
+  .slick-dots button {
+    background-color: #ccc;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    height: 12px;
+    line-height: 0;
+    transition: .3s background-color;
+    width: 12px; }
+    .slick-dots button:hover {
+      background-color: red; }
+  .slick-dots .slick-active button {
+    background-color: red; }
+
+/* =action
+---------------------------*/
+.action__item {
+  margin-left: auto;
+  margin-right: auto;
+  width: 352px; }
+
+.action__price, .action__title {
+  color: #000;
+  font-size: 18px;
+  font-family: "SegoeUIBold"; }
+
+.action__body {
+  background-color: #fff;
+  padding: 20px 15px 18px;
+  height: 315px;
+  display: flex;
+  flex-direction: column; }
+
+.action__title {
+  margin-top: 15px; }
+
+.action__price {
+  margin: 20px 0; }
+
+.action__text {
+  font-size: 17px;
+  padding-left: 10px; }
+
+.action__bottom {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column; }
+  .action__bottom p {
+    color: #000;
+    font-size: 18px;
+    font-family: "SegoeUIBold";
+    text-transform: uppercase; }
+  .action__bottom .btn-more {
+    margin-top: 25px; }
+
+/* =/action
+---------------------------*/
 /* Slider */
 .slick-slider {
   position: relative;
