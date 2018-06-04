@@ -218,6 +218,30 @@ header {
 
 /* =main
 ---------------------------*/
+#slider .slick-arrow {
+  background: rgba(0, 0, 0, 0.7);
+  background-image: url(../images/arrow.png);
+  background-repeat: no-repeat;
+  background-position: 43px 19px;
+  border: none;
+  cursor: pointer;
+  height: 70px;
+  margin-top: -35px;
+  position: absolute;
+  top: 50%;
+  width: 87px;
+  z-index: 10;
+  transition: .3s; }
+  #slider .slick-arrow:hover {
+    background-position: 33px 19px; }
+
+#slider .slick-prev {
+  left: 0; }
+
+#slider .slick-next {
+  right: 0;
+  transform: rotate(180deg); }
+
 /* Slider */
 .slick-slider {
   position: relative;
