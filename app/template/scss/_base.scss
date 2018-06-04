@@ -153,6 +153,20 @@ h3{font-size:1.6rem}
 	text-align: center;
 }
 
+
+.content-section{
+	margin: 40px 0;
+	.title{
+		color: $color1;
+		font-size: 36px;
+		text-transform: uppercase;
+		font-family: "SegoeUIBold";
+		text-align: center;
+		margin-bottom: 30px;
+	}
+}
+
+
 /* =header
 ---------------------------*/
 header{
@@ -190,7 +204,6 @@ header{
 		}
 	}
 }
-
 /* =/header
 ---------------------------*/
 

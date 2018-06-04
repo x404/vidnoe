@@ -27,3 +27,36 @@
 		}
 	}
 }
+
+
+.advantages{
+	.flexbox{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.cell{
+		font-family: "SegoeUIItalic", Arial;
+		margin-bottom: 35px;
+		text-align: center;
+		width: 220px;
+		p{
+			margin-top: 10px;
+		}
+		a{
+			text-decoration: none;
+			&:hover{
+				img{
+					border: 1px solid red;
+				}
+			}
+		}
+		img{
+			border-radius: 50%;
+			border: 1px solid rgba(255,255,255,0);
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			transition: .3s border-color
+		}
+	}
+}

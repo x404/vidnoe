@@ -165,6 +165,16 @@ h3 {
 .text-center {
   text-align: center; }
 
+.content-section {
+  margin: 40px 0; }
+  .content-section .title {
+    color: #000;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-family: "SegoeUIBold";
+    text-align: center;
+    margin-bottom: 30px; }
+
 /* =header
 ---------------------------*/
 header {
@@ -241,6 +251,29 @@ header {
 #slider .slick-next {
   right: 0;
   transform: rotate(180deg); }
+
+.advantages .flexbox {
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.advantages .cell {
+  font-family: "SegoeUIItalic", Arial;
+  margin-bottom: 35px;
+  text-align: center;
+  width: 220px; }
+  .advantages .cell p {
+    margin-top: 10px; }
+  .advantages .cell a {
+    text-decoration: none; }
+    .advantages .cell a:hover img {
+      border: 1px solid red; }
+  .advantages .cell img {
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .3s border-color; }
 
 /* Slider */
 .slick-slider {
