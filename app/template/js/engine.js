@@ -11,6 +11,16 @@ $(document).ready(function(){
 	});
 
 
+	$('#reviews-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		prevArrow: '',
+		nextArrow: '',
+		autoplay: false,
+		autoplaySpeed: 4000,
+		dots: true
+	});
+
 	// mobile-menu
 	$('#navbar').each(function(){
 		var $this = $(this),

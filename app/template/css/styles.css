@@ -405,6 +405,52 @@ header {
 .tab-content > .active {
   display: flex; }
 
+.pricelist .text {
+  background-color: #fff;
+  padding: 15px 18px; }
+  .pricelist .text u strong,
+  .pricelist .text strong u {
+    font-family: "SegoeUIBoldItalic"; }
+
+#reviews-slider .flexbox {
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+#reviews-slider .slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px; }
+  #reviews-slider .slick-dots li {
+    margin: 0 7px; }
+  #reviews-slider .slick-dots button {
+    background-color: #ccc;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    height: 12px;
+    line-height: 0;
+    transition: .3s background-color;
+    width: 12px; }
+    #reviews-slider .slick-dots button:hover {
+      background-color: red; }
+  #reviews-slider .slick-dots .slick-active button {
+    background-color: red; }
+
+.review__cell {
+  line-height: 1.8;
+  margin-bottom: 15px;
+  width: 47%; }
+  .review__cell a {
+    height: 100%;
+    display: block;
+    background-color: #fff;
+    padding: 15px 18px;
+    text-decoration: none; }
+    .review__cell a:hover {
+      background-color: #ccc; }
+
 /* Slider */
 .slick-slider {
   position: relative;

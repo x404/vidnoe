@@ -223,3 +223,71 @@
     display: flex;
   }
 }
+
+
+.pricelist{
+	.text{
+		background-color: #fff;
+		padding: 15px 18px;
+		u strong,
+		strong u
+		{
+			font-family: "SegoeUIBoldItalic";
+		}
+	}
+}
+
+
+
+// reviews
+#reviews-slider{
+	.flexbox{
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.slick-dots{
+		display: flex;
+		justify-content: center;
+		margin-top: 18px;
+		li{
+			margin: 0 7px;
+		}
+		button{
+			background-color: #ccc;
+			border-radius: 50%;
+			border: none;
+			cursor: pointer;
+			display: block;
+			font-size: 0;
+			height: 12px;
+			line-height: 0;
+			transition: .3s background-color;
+			width: 12px;
+			&:hover{
+				background-color: red;				
+			}
+		}
+		.slick-active{
+			button{
+				background-color: red;
+			}
+		}
+	}
+}
+.review{
+	&__cell{
+		line-height: 1.8;
+		margin-bottom: 15px;
+		width: 47%;
+		a{
+			height: 100%;
+			display: block;
+			background-color: $color2;
+			padding: 15px 18px;
+			text-decoration: none;
+			&:hover{
+				background-color: #ccc;
+			}
+		}
+	}
+}
