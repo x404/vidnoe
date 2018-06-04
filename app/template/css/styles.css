@@ -78,7 +78,9 @@ html {
 
 body {
   background: #f3f3f3;
-  font-display: swap; }
+  font-display: swap;
+  font-family: "SegoeUIRegular", Arial;
+  font-size: 14px; }
 
 input::-moz-focus-inner {
   border: 0;
@@ -152,7 +154,7 @@ h3 {
   position: absolute; }
 
 .form-control {
-  border: 1px solid #f4f4f4;
+  border: 1px solid #8c8c8c;
   border-radius: 0;
   margin-top: 0.6rem;
   font-size: 16px; }
@@ -160,8 +162,39 @@ h3 {
     border-color: #666;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(222, 72, 111, 0.3); }
 
+.text-center {
+  text-align: center; }
+
 /* =header
 ---------------------------*/
+header {
+  font-family: "SegoeUIBoldItalic";
+  color: #8c8c8c;
+  font-size: 15px; }
+  header .flexbox {
+    justify-content: space-between;
+    align-items: center;
+    height: 90px; }
+  header .tel {
+    color: #323232;
+    display: inline-block;
+    margin-top: 5px;
+    text-decoration: none; }
+  header img {
+    display: block; }
+  header .nav {
+    flex-grow: 1;
+    display: flex; }
+    header .nav li {
+      margin-left: 20px; }
+    header .nav a {
+      color: currentColor;
+      text-decoration: none;
+      border-bottom: 2px dashed rgba(255, 255, 255, 0); }
+      header .nav a.active {
+        color: red;
+        border-bottom-color: currentColor; }
+
 /* =/header
 ---------------------------*/
 /* =navigation

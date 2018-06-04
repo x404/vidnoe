@@ -4,9 +4,9 @@ header, section, footer, aside, nav, article {display:block}
 ul{list-style:none}
 $color1:#000;
 $color2:#fff;
+$color3:#8c8c8c;
+$color4:#323232;
 
-$color3:#f4f4f4;
-$color4:#1a237e;
 $color5:#666;
 $color6:#ff5722;
 $color7:#80bbde;
@@ -35,6 +35,8 @@ html {
 body{
 	background: #f3f3f3;
 	font-display: swap;
+	font-family: "SegoeUIRegular", Arial;
+	font-size: 14px;
 }
 
 
@@ -147,12 +149,46 @@ h3{font-size:1.6rem}
 	}
 }
 
-
+.text-center{
+	text-align: center;
+}
 
 /* =header
 ---------------------------*/
 header{
-
+	font-family: "SegoeUIBoldItalic";
+	color: $color3;
+	font-size: 15px;
+	.flexbox{
+		justify-content: space-between;
+		align-items: center;
+		height: 90px;
+	}
+	.tel{
+		color: $color4;
+		display: inline-block;
+		margin-top: 5px;
+		text-decoration: none;
+	}
+	img{
+		display: block;
+	}
+	.nav{
+		flex-grow: 1;
+		display: flex;
+		li{
+			margin-left: 20px;
+		}
+		a{
+			color: currentColor;
+			text-decoration: none;
+			border-bottom: 2px dashed rgba(255,255,255,0);
+			&.active{
+				color: red;
+				border-bottom-color: currentColor;
+			}
+		}
+	}
 }
 
 /* =/header
