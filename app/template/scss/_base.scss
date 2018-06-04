@@ -29,20 +29,12 @@ $color8:#292929;
 html {
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
-	font-size: 62.5%
 }
 
 
 body{
-	@include flexbox;
-	@include font-size(1.4);
-	flex-flow: column;
+	background: #f3f3f3;
 	font-display: swap;
-	height: 100vh;
-}
-
-html, body{
-	height: 100%
 }
 
 
@@ -58,10 +50,10 @@ input::-moz-focus-inner{
 }
 
 
-.outerwrapper{
-	-webkit-flex: 1;
-	flex: 1;
+.flexbox{
+	display: flex;
 }
+
 
 /*** standart classes *****/
 p{}

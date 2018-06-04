@@ -12,8 +12,8 @@
 <meta name="robots" content="noindex,nofollow" />
 
 <title>Главная</title>
-<link rel="stylesheet" href="/themes/temac/css/styles.min.css" />
-<script src="/themes/temac/js/libs.min.js"></script>
+<link rel="stylesheet" href="/template/css/styles.min.css" />
+<script src="/template/js/libs.min.js"></script>
 
 
 <link rel="stylesheet" href="outdatedbrowser/outdatedbrowser.min.css" />
@@ -35,67 +35,67 @@
 </head>
 <body>
 
-<div class="outerwrapper">
-    <header class="header">
-	    А я тут вместо головы.
-	</header>
-
-	<!-- =nav -->
-	<nav id="navbar" class="mainnav">
-		<div class="mainnav__list">
-			<ul class="nav nav-tabs mainnav" role="tablist">
-				<li class="folder"> 
-					<a href="#">Меню 1</a>
-					<div class="subnav">
-						<ul>
-							<li><a href="#">Меню 1</a></li>
-							<li><a href="#">Меню 2</a></li>
-							<li><a href="#">Меню 3</a></li>
-							<li><a href="#">Меню 4</a></li>
-						</ul>
-					</div>
-				</li>
-				<li class="folder">
-					<a href="#">Меню 2</a>
-					<div class="subnav">
-						<ul>
-							<li><a href="#">Меню 1</a></li>
-							<li><a href="#">Меню 2</a></li>
-							<li><a href="#">Меню 3</a></li>
-							<li><a href="#">Меню 4</a></li>
-						</ul>
-					</div>
-				</li>
-				<li><a href="#">Меню 3</a></li>
-				<li><a href="#">Меню 4</a></li>
-				<li><a href="#">Меню 5</a></li>
-			</ul>
-			<div class="show-sm">
-				<a href="tel:+123456789">+1234 56-78-89</a>
-				<a href="mailto:info@transliftrus.ru">info@site.site</a>
+<!-- =header -->
+<header class="header">
+	<div class="container">
+		<div class="flexbox">
+			<div class="logo">
+				<img src="/template/images/logo.png" alt="Квартиры в Видном" />
 			</div>
+			<div class="header__contacts">
+				<p>квартиры посуточно в Видном</p>
+				<a href="tel:+79262171299" class="tel">+7 (926) 217 12 99</a>
+			</div>
+			<!-- =nav -->
+			<nav id="navbar" class="mainnav">
+				<div class="mainnav__list">
+					<ul class="nav nav-tabs mainnav" role="tablist">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#advantages" title="">почему мы</a></li>
+						<li><a href="#flats" title="">квартиры</a></li>
+						<li><a href="#pricelist" title="">прайс-лист</a></li>
+						<li><a href="#reviews" title="">отзывы</a></li>
+						<li><a href="#actions" title="">акции</a></li>
+						<li><a href="#contacts" title="">контакты</a></li>
+					</ul>
+					<div class="show-sm">
+						<a href="tel:+123456789">+1234 56-78-89</a>
+						<a href="mailto:info@transliftrus.ru">info@site.site</a>
+					</div>
+				</div>
+			</nav>
+			<!-- =/nav -->
 		</div>
-	</nav>
+	</div>
+</header>
+<!-- =/header -->
 
-	<button type="button" class="navbar-toggle">
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-	</button>
-	<button type="button" class="close-menu"><img src="/template/images/close.png" alt="Закрыть меню" /></button>
-	<!-- =/nav -->
-
-	<button type="button" class="navbar-toggle">
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-	</button>
-	<button type="button" class="close-menu"><img src="template/images/close.png" alt=""></button>
+<!-- =navbar-toggle -->
+<button type="button" class="navbar-toggle">
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+</button>
+<button type="button" class="close-menu"><img src="/template/images/close.png" alt="Закрыть меню" /></button>
+<!-- =/navbar-toggle -->
 
 
-    <div class="main">
+
+<!-- =slider -->
+<div id="slider">
+	<div>
+		<img src="/images/slide-1.jpg" alt="">
+	</div>
+	<div>
+		<img src="/images/slide-1.jpg" alt="">
+	</div>
+</div>
+
+<!-- =/slider -->
+
+
+<div class="main">
 		Пароль отправляется серверу в «открытом» виде — он шифруется известным алгоритмом на известном ключе. При использовании простого логина, пароль пользователя может быть перехвачен и дешифрирован.
-    </div>
 </div>
 
 <footer class="footer">
@@ -107,9 +107,11 @@
 
 <div id="outdated"></div>
 
-<script src="/template/js/owl.carousel.min.js"></script>
-<link rel="stylesheet" property="stylesheet" href="template/css/owl.carousel.css">
+<!-- <script src="/template/js/owl.carousel.min.js"></script> -->
+<!-- <link rel="stylesheet" property="stylesheet" href="template/css/owl.carousel.css"> -->
+<!-- <link rel="stylesheet" property="stylesheet" href="template/css/owl.carousel.css"> -->
 
+<script src="/template/js/slick.min.js"></script>
 <script src="/template/js/engine.js"></script>
 </body>
 </html>

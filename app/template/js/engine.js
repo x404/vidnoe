@@ -1,39 +1,13 @@
 $(document).ready(function(){
 
-	// карусель
-	$('#foo1').owlCarousel({
-		loop:false,
-		nav:true,
-		dots: false,
-		items:3,
-		startPosition : 2,
-		stagePadding : 250,
-		navText: ["", ""],
-		onInitialized: function (event) {
-			refreshFirstLastVisible(event);
-		},
-		onChanged: function (event) {
-			refreshFirstLastVisible(event);
-		},
-		responsive:{
-			0:{
-				items:1,
-				stagePadding: 20
-			},
-			900:{
-				items:2,
-				stagePadding: 0
-			},
-			992:{
-				items:1
-			},
-			1250:{
-				items:2
-			},
-			1550:{
-				items:3
-			}
-		}
+
+	$('#slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		prevArrow: '<button type="button" class="slick-prev slick-arrow" aria-label="Назад"></button>',
+		nextArrow: '<button type="button" class="slick-next slick-arrow" aria-label="Вперед"></button>',
+		autoplay: true,
+		autoplaySpeed: 4000
 	});
 
 
