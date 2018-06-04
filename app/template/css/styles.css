@@ -95,7 +95,8 @@ p {
   line-height: 1.8; }
 
 a {
-  color: #020000; }
+  color: #020000;
+  transition: .3s; }
 
 h1 {
   font-size: 2.5rem; }
@@ -184,6 +185,11 @@ em strong {
     font-family: "SegoeUIBold";
     text-align: center;
     margin-bottom: 30px; }
+
+.flexcenter, .flats__tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 /* =header
 ---------------------------*/
@@ -323,6 +329,82 @@ header {
   width: 45px;
   z-index: 11; }
 
+.flats .nav-tabs {
+  display: flex; }
+  .flats .nav-tabs a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #b3b3b3;
+    color: #fff;
+    margin: 0 12px;
+    font-family: "SegoeUIBoldItalic";
+    text-transform: uppercase;
+    text-decoration: none;
+    height: 40px;
+    border-radius: 40px;
+    padding: 0 15px; }
+    .flats .nav-tabs a:hover, .flats .nav-tabs a.active {
+      background-color: red; }
+
+.flats .tab-content {
+  margin-top: 50px; }
+
+.flats .tab-pane {
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.flats .flat {
+  margin-right: 33px;
+  margin-bottom: 32px;
+  width: 264px; }
+  .flats .flat__pic img {
+    display: block; }
+  .flats .flat__body {
+    background-color: #fff;
+    padding: 10px 15px 24px; }
+  .flats .flat__price, .flats .flat__title {
+    font-size: 18px;
+    font-family: "SegoeUIBold";
+    color: #000; }
+  .flats .flat__title {
+    padding-right: 10px; }
+  .flats .flat__price {
+    margin-top: 10px; }
+  .flats .flat__address {
+    font-family: "SegoeUIRegular";
+    margin-top: 15px; }
+  .flats .flat__service {
+    margin-top: 10px; }
+  .flats .flat__tel {
+    color: #000;
+    font-family: "SegoeUIBold";
+    margin: 15px 0;
+    text-transform: uppercase; }
+  .flats .flat .btn {
+    transition: .3s background-color;
+    background: #b3b3b3;
+    border: none;
+    color: #fff;
+    font-family: "SegoeUIBoldItalic";
+    width: 215px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 40px;
+    border-radius: 40px;
+    font-size: 17px;
+    cursor: pointer; }
+    .flats .flat .btn:hover {
+      background-color: red; }
+
+.tab-content > .tab-pane {
+  display: none; }
+
+.tab-content > .active {
+  display: flex; }
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -397,6 +479,12 @@ header {
 
 .slick-arrow.slick-hidden {
   display: none; }
+
+.fade {
+  opacity: 0;
+  transition: .3s opacity .15s linear; }
+  .fade.show {
+    opacity: 1; }
 
 /* =mobile-menu
 ---------------------------*/
