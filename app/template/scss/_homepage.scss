@@ -38,7 +38,7 @@
 		font-family: "SegoeUIItalic", Arial;
 		margin-bottom: 35px;
 		text-align: center;
-		width: 220px;
+		width: 210px;
 		p{
 			margin-top: 10px;
 		}
@@ -58,5 +58,51 @@
 			margin-right: auto;
 			transition: .3s border-color
 		}
+	}
+
+	.text{
+		margin-top: 20px;
+		p{
+			margin: 3px 0;
+		}
+	}
+}
+
+
+.steps{
+	.flexbox{
+		padding-left: 150px;
+		padding-right: 150px;
+		justify-content: space-around;
+		position: relative;
+		text-align: center;
+		&:after{
+			@extend .before;
+			background-image: linear-gradient(to right, #fff 0, $color5 30%, $color5 70%,  #fff 100%); 
+			height: 1px;
+			left: 0;
+			top: 20px;
+			width: 100%;
+		}
+	}
+	.step{
+		width: 240px;
+	}
+	.circle{
+		align-items: center;
+		background-color: $color5;
+		border-radius: 50%;
+		color: $color2;
+		display: flex;
+		font-family: "SegoeUIBold";
+		font-size: 22px;
+		height: 45px;
+		justify-content: center;
+		margin-bottom: 25px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		width: 45px;
+		z-index: 11;
 	}
 }

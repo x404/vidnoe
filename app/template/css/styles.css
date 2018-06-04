@@ -79,8 +79,9 @@ html {
 body {
   background: #f3f3f3;
   font-display: swap;
-  font-family: "SegoeUIRegular", Arial;
-  font-size: 14px; }
+  font-family: "SegoeUIItalic", Arial;
+  font-size: 14px;
+  color: #333; }
 
 input::-moz-focus-inner {
   border: 0;
@@ -90,6 +91,9 @@ input::-moz-focus-inner {
   display: flex; }
 
 /*** standart classes *****/
+p {
+  line-height: 1.8; }
+
 a {
   color: #020000; }
 
@@ -132,11 +136,17 @@ h3 {
   font-style: normal;
   font-weight: normal; }
 
+strong,
 .bold {
   font-family: "SegoeUIBold"; }
 
+em, i,
 .italic {
   font-family: "SegoeUIItalic"; }
+
+strong em,
+em strong {
+  font-family: "SegoeUIBoldItalic"; }
 
 .tdn {
   text-decoration: none; }
@@ -148,7 +158,7 @@ h3 {
   .tdu:hover {
     text-decoration: none; }
 
-.before {
+.before, .steps .flexbox:after {
   content: "";
   display: block;
   position: absolute; }
@@ -159,7 +169,7 @@ h3 {
   margin-top: 0.6rem;
   font-size: 16px; }
   .form-control:focus, .form-control:active {
-    border-color: #666;
+    border-color: #808080;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(222, 72, 111, 0.3); }
 
 .text-center {
@@ -260,7 +270,7 @@ header {
   font-family: "SegoeUIItalic", Arial;
   margin-bottom: 35px;
   text-align: center;
-  width: 220px; }
+  width: 210px; }
   .advantages .cell p {
     margin-top: 10px; }
   .advantages .cell a {
@@ -274,6 +284,44 @@ header {
     margin-left: auto;
     margin-right: auto;
     transition: .3s border-color; }
+
+.advantages .text {
+  margin-top: 20px; }
+  .advantages .text p {
+    margin: 3px 0; }
+
+.steps .flexbox {
+  padding-left: 150px;
+  padding-right: 150px;
+  justify-content: space-around;
+  position: relative;
+  text-align: center; }
+  .steps .flexbox:after {
+    background-image: linear-gradient(to right, #fff 0, #808080 30%, #808080 70%, #fff 100%);
+    height: 1px;
+    left: 0;
+    top: 20px;
+    width: 100%; }
+
+.steps .step {
+  width: 240px; }
+
+.steps .circle {
+  align-items: center;
+  background-color: #808080;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  font-family: "SegoeUIBold";
+  font-size: 22px;
+  height: 45px;
+  justify-content: center;
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  width: 45px;
+  z-index: 11; }
 
 /* Slider */
 .slick-slider {
