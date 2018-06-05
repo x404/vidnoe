@@ -1,4 +1,5 @@
 #slider{
+	margin-top: 90px;
 	.slick{
 		&-arrow{
 			background: rgba(0,0,0,.7);
@@ -295,7 +296,6 @@
 }
 
 
-
 /* =action
 ---------------------------*/
 .action{
@@ -355,3 +355,8 @@
 
 /* =/action
 ---------------------------*/
+
+
+#ymap{
+	height: 410px;
+}

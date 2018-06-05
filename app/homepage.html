@@ -33,7 +33,7 @@
 <![endif]-->
 
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar" data-offset="98">
 
 <!-- =header -->
 <header class="header">
@@ -47,16 +47,16 @@
 				<a href="tel:+79262171299" class="tel">+7 (926) 217 12 99</a>
 			</div>
 			<!-- =nav -->
-			<nav id="navbar" class="mainnav">
+			<nav class="mainnav" id="navbar">
 				<div class="mainnav__list">
-					<ul class="nav nav-tabs mainnav" role="tablist">
-						<li><a href="#">главная</a></li>
-						<li><a href="#advantages" title="">почему мы</a></li>
-						<li><a href="#flats" title="">квартиры</a></li>
-						<li><a href="#pricelist" title="">прайс-лист</a></li>
-						<li><a href="#reviews" title="">отзывы</a></li>
-						<li><a href="#actions" title="">акции</a></li>
-						<li><a href="#contacts" title="">контакты</a></li>
+					<ul class="nav nav-tabs" role="tablist">
+						<li><a class="nav-link" href="#slider">главная</a></li>
+						<li><a class="nav-link" href="#advantages" title="">почему мы</a></li>
+						<li><a class="nav-link" href="#flats" title="">квартиры</a></li>
+						<li><a class="nav-link" href="#pricelist" title="">прайс-лист</a></li>
+						<li><a class="nav-link" href="#reviews" title="">отзывы</a></li>
+						<li><a class="nav-link" href="#actions" title="">акции</a></li>
+						<li><a class="nav-link" href="#maps" title="">контакты</a></li>
 					</ul>
 					<div class="show-sm">
 						<a href="tel:+123456789">+1234 56-78-89</a>
@@ -96,7 +96,7 @@
 	<!-- =advantages -->
 	<section class="advantages content-section" id="advantages">
 		<header>
-			<p class="title">почему мы</p>			
+			<h2 class="title">почему мы</h2>
 		</header>
 		<div class="flexbox">
 			<div class="cell">
@@ -147,9 +147,9 @@
 
 	<!-- =steps -->
 	<div class="steps content-section" id="steps">
-		<p class="title">
+		<h2 class="title">
 			Арендовать квартиру у нас очень просто ... за 3 шага
-		</p>
+		</h2>
 		<div class="flexbox">
 			<div class="step">
 				<div class="circle">1</div>
@@ -172,16 +172,16 @@
 	<div class="flats content-section" id="flats">
 		<div class="flats__tabs">
 			<div role="tablist" class="nav nav-tabs">
-				<a class="button active" data-toggle="tab" href="#flats1" id="#flats1-tab" role="tab" aria-controls="flats1">1 КОМНАТНЫЕ КВАРТИРЫ</a>
-				<a class="button" data-toggle="tab" href="#flats2" id="#flats2-tab" role="tab" aria-controls="flats2">2 КОМНАТНЫЕ КВАРТИРЫ</a>
-				<a class="button" data-toggle="tab" href="#flats3" id="#flats3-tab" role="tab" aria-controls="flats3">3 КОМНАТНЫЕ КВАРТИРЫ</a>
+				<a class="button active" data-toggle="tab" href="#flats1" id="flats1-tab" role="tab" aria-controls="flats1">1 КОМНАТНЫЕ КВАРТИРЫ</a>
+				<a class="button" data-toggle="tab" href="#flats2" id="flats2-tab" role="tab" aria-controls="flats2">2 КОМНАТНЫЕ КВАРТИРЫ</a>
+				<a class="button" data-toggle="tab" href="#flats3" id="flats3-tab" role="tab" aria-controls="flats3">3 КОМНАТНЫЕ КВАРТИРЫ</a>
 			</div>
 		</div>
 		<div class="tab-content">
-			<div class="tab-pane fade flexbox flat__tab show active" id="flats1" aria-labelledby="flats-tab">
+			<div class="tab-pane fade flexbox flat__tab show active" id="flats1" role="tabpanel" aria-labelledby="flats1-tab">
 				<div class="flat">
 					<div class="flat__pic">
-						<img src="/images/flats/flat-7.jpg" alt="1 КОМНАТНАЯ КВАРТИРА (42м2)">
+						<img src="/images/flats/flat-7.jpg" alt="1 КОМНАТНАЯ КВАРТИРА (42м2)" >
 					</div>
 					<div class="flat__body">
 						<div class="flat__title">1 КОМНАТНАЯ КВАРТИРА (42м<sup>2</sup>)</div>
@@ -295,7 +295,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="tab-pane fade flexbox flat__tab products__two" id="flats2" aria-labelledby="flats-tab">
+			<div class="tab-pane fade flexbox flat__tab products__two" id="flats2" role="tabpanel" aria-labelledby="flats2-tab">
 				<div class="flat">
 					<div class="flat__pic">
 						<img src="/images/flats/flat-6.jpg" alt="2 КОМНАТНАЯ КВАРТИРА (42м2)">
@@ -481,7 +481,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="tab-pane fade flexbox flat__tab products__two" id="flats3" aria-labelledby="flats-tab">
+			<div class="tab-pane fade flexbox flat__tab products__two" id="flats3" role="tabpanel" aria-labelledby="flats3-tab">
 				<div class="flat">
 					<div class="flat__pic">
 						<img src="/images/flats/flat-9.jpg" alt="3 КОМНАТНАЯ КВАРТИРА (42м2)">
@@ -674,7 +674,7 @@
 	<!-- =pricelist -->
 	<section class="pricelist content-section" id="pricelist">
 		<header>
-			<p class="title">ПРАЙС-ЛИСТ</p>
+			<h2 class="title">ПРАЙС-ЛИСТ</h2>
 		</header>
 		<div class="text">
 			<p>Сдам квартиру на период проведения Чемпионата мира по футболу 2018 в г. Видное (4 км от Москвы). Сутки <u><strong>5000,00 рублей за квартиру</strong></u>. Хорошая транспортная доступность. До м. Аннино 15 минут на маршрутке (без пробок). Также идет транспорт до электрички (5 минут, пробок не бывает). Электричка ходит часто, до Павелецкого вокзала (м. Павелецкая-центр Москвы) 35 минут (66 рублей), на экспрессе 25 минут (103 рубля). Также имеются промежуточные остановки. До стадиона Лужники и Спартак 1,5 часа с 3-мя пересадками от дома. Рядом магазины, итальянский ресторан (хорошая кухня, умеренные цены, ориентировочно 500-1000 рублей за полноценный обед ), палатки с быстрым питанием. Также рядом имеется небольшой спорт-бар. За домом небольшой парк с соснами. Чистая квартира, с косметическим ремонтом. Имеется 2 спальных места. При большем количестве гостей можем предоставить надувную кровать и детский диванчик (ориентировочный возраст до 15 лет). Будет предоставлено чистое белье и полотенца. Делаю регистрацию. Если срок аренды будет от недели, сделаю скидку.Также, если вы не знаете, как добраться от аэропорта или вокзала, мы сможем Вас встретить. Стоимость встречи будет зависеть от того, в какое время и в какой аэропорт или вокзал вы прибываете. Если вы приедете на машине, то не будет проблем с парковкой (места есть всегда). </p>
@@ -686,7 +686,7 @@
 	<!-- =reviews -->
 	<section class="reviews content-section" id="reviews">
 		<header>
-			<p class="title">ОТЗЫВЫ</p>
+			<h2 class="title">ОТЗЫВЫ</h2>
 		</header>
 
 		<div id="reviews-slider">
@@ -743,7 +743,7 @@
 	<!-- =actions -->
 	<section class="actions content-section" id="actions">
 		<header>
-			<p class="title">АКЦИИ</p>
+			<h2 class="title">АКЦИИ</h2>
 		</header>
 		<div id="actions-slider">
 			<div>
@@ -819,6 +819,7 @@
 <!-- =maps -->
 <div class="maps content-section" id="maps">
 	<p class="title text-center">ГДЕ МЫ НАХОДИМСЯ</p>
+	<div id="ymap"></div>
 </div>
 <!-- =/maps -->
 
@@ -826,8 +827,15 @@
 <footer class="footer">
 	<div class="container">
 		<div class="flexbox">
-			<div class="social">
+			<div class="footer__left">
 				<p>квартиры посуточно в Видном</p>
+				<div class="social">
+					<!-- =share -->
+					<div class="share text-center">
+						<div class="ya-share2" data-services="collections,vkontakte,facebook,odnoklassniki,moimir,gplus,twitter,linkedin,lj,viber,whatsapp,skype,telegram"></div>
+					</div>
+					<!-- =/share -->
+				</div>
 			</div>
 			<div class="kreotif text-center">
 				<a href="https://kreotif.com" title="" target="_blank">создание сайта</a> Digital Agency Kreotif <br>
@@ -835,17 +843,59 @@
 			</div>
 		</div>
 	</div>
+<button id="totop"></button>
 </footer>
 <!-- =/footer -->
+
 
 
 <div id="outdated"></div>
 
 <!-- <script src="/template/js/owl.carousel.min.js"></script> -->
 <!-- <link rel="stylesheet" property="stylesheet" href="template/css/owl.carousel.css"> -->
-<!-- <link rel="stylesheet" property="stylesheet" href="template/css/owl.carousel.css"> -->
 
 <script src="/template/js/slick.min.js"></script>
+<script src="//yastatic.net/share2/share.js"></script>
+<script src="http://api-maps.yandex.ru/2.1.26/?lang=ru_RU"></script>
 <script src="/template/js/engine.js"></script>
+
+<script>
+var map;
+var myCollection;	
+ymaps.ready(function () {
+	map = new ymaps.Map('ymap', {
+		center: [55.545984, 37.687309],
+		zoom: 17
+	});
+
+    myPlacemark = new ymaps.Placemark(map.getCenter(), {
+        hintContent: 'Собственный значок метки',
+        balloonContent: 'Это красивая метка'
+    }, {
+        // Опции.
+        // Необходимо указать данный тип макета.
+        iconLayout: 'default#image',
+        // Своё изображение иконки метки.
+        iconImageHref: '/template/images/balloon.png',
+        // Размеры метки.
+        iconImageSize: [69, 86],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        iconImageOffset: [-30, -86]
+    }),
+
+
+	map.behaviors.disable('scrollZoom'); 
+	map.geoObjects.add(myPlacemark);
+
+	map.events.add('click', function onMapClick(e) {
+		if(map.behaviors.isEnabled('scrollZoom')) {
+			map.events.remove('click', onMapClick);
+		} else {
+			map.behaviors.enable(['scrollZoom']);
+		}
+	});
+})
+</script>
 </body>
 </html>
