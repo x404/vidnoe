@@ -1,4 +1,19 @@
 $(document).ready(function(){
+	'use strict';
+
+	$('#infomodal').on('show.bs.modal', function (e) {
+		var $this = $(e.relatedTarget),
+			id = $this.data('id'),
+			url = id;
+
+		$.ajax({
+			url: url
+		}).done(function(data) {
+			$('#infomodal .modal__text').html(data);
+		});
+	});
+
+
 
 	// scroll page
 	$('nav a[href*=\\#]:not([href=\\#])').click(function() {
@@ -77,31 +92,30 @@ $(document).ready(function(){
 		}, 800);
 		return false;
 	});
-
 });
 
 // =заглушка для IE
 //event listener: DOM ready
-function addLoadEvent(func) {
-	var oldonload = window.onload;
-	if (typeof window.onload != 'function') {
-		window.onload = func;
-	} else {
-		window.onload = function() {
-			if (oldonload) {
-				oldonload();
-			}
-			func();
-		}
-	}
-}
+// function addLoadEvent(func) {
+// 	var oldonload = window.onload;
+// 	if (typeof window.onload != 'function') {
+// 		window.onload = func;
+// 	} else {
+// 		window.onload = function() {
+// 			if (oldonload) {
+// 				oldonload();
+// 			}
+// 			func();
+// 		}
+// 	}
+// }
 //call plugin function after DOM ready
-addLoadEvent(function(){
-	outdatedBrowser({
-		bgColor: '#f25648',
-		color: '#ffffff',
-		lowerThan: 'transform',
-		languagePath: '/outdatedbrowser/lang/ru.html'
-	})
-});
+// addLoadEvent(function(){
+// 	outdatedBrowser({
+// 		bgColor: '#f25648',
+// 		color: '#ffffff',
+// 		lowerThan: 'transform',
+// 		languagePath: '/outdatedbrowser/lang/ru.html'
+// 	})
+// });
 // =/заглушка для IE
