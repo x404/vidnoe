@@ -21,7 +21,7 @@ $(document).ready(function(){
 		slidesToScroll: 1,
 		prevArrow: '<button type="button" class="slick-prev slick-arrow" aria-label="Назад"></button>',
 		nextArrow: '<button type="button" class="slick-next slick-arrow" aria-label="Вперед"></button>',
-		autoplay: true,
+		autoplay: false,
 		autoplaySpeed: 4000
 	});
 
