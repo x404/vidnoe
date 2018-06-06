@@ -70,7 +70,7 @@
 		text-align: center;
 		width: 210px;
 		p{
-			margin-top: 10px;
+			margin-top: 23px;
 		}
 		a{
 			text-decoration: none;
@@ -91,13 +91,19 @@
 	}
 
 	.text{
-		margin-top: 20px;
+		margin-top: 11px;
 		p{
 			margin: 3px 0;
 		}
 	}
 }
 
+
+.text{
+	p{
+		line-height: 1.5;
+	}
+}
 
 .steps{
 	.flexbox{
@@ -128,7 +134,7 @@
 		font-size: 22px;
 		height: 45px;
 		justify-content: center;
-		margin-bottom: 25px;
+		margin-bottom: 17px;
 		margin-left: auto;
 		margin-right: auto;
 		position: relative;
@@ -140,8 +146,10 @@
 
 
 .flats{
+	margin-bottom: -22px;
 	&__tabs{
-		@extend .flexcenter
+		@extend .flexcenter;
+		margin-top: 48px;
 	}
 	.nav-tabs{
 		display: flex;
@@ -197,17 +205,16 @@
 		&__title
 		{
 			padding-right: 10px;
-			// text-transform: uppercase;
 		}
 		&__price{
-			margin-top: 10px;
+			margin-top: 15px;
 		}
 		&__address{
 			font-family: "SegoeUIRegular";
-			margin-top: 15px;
+			margin-top: 7px;
 		}
 		&__service{
-			margin-top: 10px;
+			margin-top: 5 px;
 		}
 
 		&__tel{
@@ -331,6 +338,7 @@
 	&__item{
 		margin-left: auto;
 		margin-right: auto;
+		margin-top: 10px;
 		width: 352px;
 	}
 	&__pic{
@@ -352,11 +360,11 @@
 	}
 
 	&__title{
-		margin-top: 15px;
+		margin-top: 8px;
 	}
 
 	&__price{
-		margin: 20px 0;
+		margin: 16px 0;
 	}
 
 	&__text{
@@ -388,6 +396,10 @@
 
 #ymap{
 	height: 410px;
+}
+
+#maps{
+	margin-bottom: 0;
 }
 
 

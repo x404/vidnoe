@@ -177,7 +177,7 @@ em strong {
   text-align: center; }
 
 .content-section {
-  margin: 40px 0; }
+  margin: 33px 0; }
   .content-section .title {
     color: #000;
     font-size: 36px;
@@ -351,7 +351,7 @@ em strong {
   text-align: center;
   width: 210px; }
   .advantages .cell p {
-    margin-top: 10px; }
+    margin-top: 23px; }
   .advantages .cell a {
     text-decoration: none; }
     .advantages .cell a:hover img {
@@ -365,9 +365,12 @@ em strong {
     transition: .3s border-color; }
 
 .advantages .text {
-  margin-top: 20px; }
+  margin-top: 11px; }
   .advantages .text p {
     margin: 3px 0; }
+
+.text p {
+  line-height: 1.5; }
 
 .steps .flexbox {
   padding-left: 150px;
@@ -395,65 +398,66 @@ em strong {
   font-size: 22px;
   height: 45px;
   justify-content: center;
-  margin-bottom: 25px;
+  margin-bottom: 17px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
   width: 45px;
   z-index: 11; }
 
-.flats .nav-tabs {
-  display: flex; }
-  .flats .nav-tabs a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #b3b3b3;
-    color: #fff;
-    margin: 0 12px;
-    font-family: "SegoeUIBoldItalic";
-    text-transform: uppercase;
-    text-decoration: none;
-    height: 40px;
-    border-radius: 40px;
-    padding: 0 15px; }
-    .flats .nav-tabs a:hover, .flats .nav-tabs a.active {
-      background-color: red; }
-
-.flats .tab-content {
-  margin-top: 50px; }
-
-.flats .tab-pane {
-  flex-wrap: wrap;
-  justify-content: center; }
-
-.flats .flat {
-  margin-right: 33px;
-  margin-bottom: 32px;
-  width: 270px; }
-  .flats .flat__pic img {
-    display: block; }
-  .flats .flat__body {
-    background-color: #fff;
-    padding: 10px 15px 24px; }
-  .flats .flat__price, .flats .flat__title {
-    font-size: 18px;
-    font-family: "SegoeUIBold";
-    color: #000; }
-  .flats .flat__title {
-    padding-right: 10px; }
-  .flats .flat__price {
-    margin-top: 10px; }
-  .flats .flat__address {
-    font-family: "SegoeUIRegular";
-    margin-top: 15px; }
-  .flats .flat__service {
-    margin-top: 10px; }
-  .flats .flat__tel {
-    color: #000;
-    font-family: "SegoeUIBold";
-    margin: 15px 0;
-    text-transform: uppercase; }
+.flats {
+  margin-bottom: -22px; }
+  .flats__tabs {
+    margin-top: 48px; }
+  .flats .nav-tabs {
+    display: flex; }
+    .flats .nav-tabs a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #b3b3b3;
+      color: #fff;
+      margin: 0 12px;
+      font-family: "SegoeUIBoldItalic";
+      text-transform: uppercase;
+      text-decoration: none;
+      height: 40px;
+      border-radius: 40px;
+      padding: 0 15px; }
+      .flats .nav-tabs a:hover, .flats .nav-tabs a.active {
+        background-color: red; }
+  .flats .tab-content {
+    margin-top: 50px; }
+  .flats .tab-pane {
+    flex-wrap: wrap;
+    justify-content: center; }
+  .flats .flat {
+    margin-right: 33px;
+    margin-bottom: 32px;
+    width: 270px; }
+    .flats .flat__pic img {
+      display: block; }
+    .flats .flat__body {
+      background-color: #fff;
+      padding: 10px 15px 24px; }
+    .flats .flat__price, .flats .flat__title {
+      font-size: 18px;
+      font-family: "SegoeUIBold";
+      color: #000; }
+    .flats .flat__title {
+      padding-right: 10px; }
+    .flats .flat__price {
+      margin-top: 15px; }
+    .flats .flat__address {
+      font-family: "SegoeUIRegular";
+      margin-top: 7px; }
+    .flats .flat__service {
+      margin-top: 5 px; }
+    .flats .flat__tel {
+      color: #000;
+      font-family: "SegoeUIBold";
+      margin: 15px 0;
+      text-transform: uppercase; }
 
 .btn-more {
   transition: .3s background-color;
@@ -530,6 +534,7 @@ em strong {
 .action__item {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 10px;
   width: 352px; }
 
 .action__price, .action__title {
@@ -545,10 +550,10 @@ em strong {
   flex-direction: column; }
 
 .action__title {
-  margin-top: 15px; }
+  margin-top: 8px; }
 
 .action__price {
-  margin: 20px 0; }
+  margin: 16px 0; }
 
 .action__text {
   font-size: 17px;
@@ -571,6 +576,9 @@ em strong {
 ---------------------------*/
 #ymap {
   height: 410px; }
+
+#maps {
+  margin-bottom: 0; }
 
 .modal__text strong, .modal__text b {
   font-family: "SegoeUIBoldItalic"; }
