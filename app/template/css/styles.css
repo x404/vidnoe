@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .container {
   margin-right: auto;
   margin-left: auto; }
@@ -142,16 +143,17 @@ strong,
   font-family: "SegoeUIBold"; }
 
 em, i,
-.italic {
+.italic,
+.policy {
   font-family: "SegoeUIItalic"; }
 
 strong em,
 em strong {
   font-family: "SegoeUIBoldItalic"; }
 
-.tdn {
+.tdn, .policy a {
   text-decoration: none; }
-  .tdn:hover {
+  .tdn:hover, .policy a:hover {
     text-decoration: underline; }
 
 .tdu {
@@ -159,7 +161,7 @@ em strong {
   .tdu:hover {
     text-decoration: none; }
 
-.before, .steps .flexbox:after {
+.before, .steps .flexbox:after, .card__gallery:after, .switchpic:after {
   content: "";
   display: block;
   position: absolute; }
@@ -292,6 +294,46 @@ em strong {
   #totop:hover {
     background-position: center 40%;
     background-color: rgba(255, 0, 0, 0.75); }
+
+label.error {
+  display: none !important; }
+
+.form-control.error {
+  border-color: red !important; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0); }
+
+.justifyleft {
+  text-align: left !important; }
+
+.justifyright {
+  text-align: right !important; }
+
+.justifycenter {
+  text-align: center !important; }
+
+.justifyfull {
+  text-align: justify !important; }
+
+img.justifyleft, table.justifyleft {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 5px; }
+
+img.justifyright, table.justifyright {
+  float: right;
+  margin-left: 10px;
+  margin-bottom: 5px; }
+
+img.justifycenter, table.justifycenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 
 #slider {
   margin-top: 90px; }
@@ -792,6 +834,258 @@ em strong {
   .modal-content .close line {
     stroke: #fff;
     stroke-width: 2; }
+
+.card__title, .card__shortdesc {
+  color: #808080;
+  font-family: "SegoeUIBold";
+  font-size: 18px;
+  text-align: center; }
+
+.card__shortdesc {
+  margin: 10px 0 -5px; }
+
+.card__price {
+  color: #000; }
+
+.card__address {
+  font-size: 18px;
+  font-family: "SegoeUIBoldItalic";
+  color: #4c4c4c; }
+
+.card__text {
+  font-size: 17px;
+  margin-top: 15px; }
+  .card__text p {
+    line-height: 1.5; }
+
+.card__contacts {
+  color: #000;
+  font-size: 18px;
+  margin: 10px 0; }
+
+.card__gallery {
+  padding-bottom: 40px;
+  position: relative; }
+  .card__gallery:after {
+    background-image: linear-gradient(to right, #fff 0, red 30%, red 70%, #fff 100%);
+    left: 50%;
+    bottom: 15px;
+    margin-left: -150px;
+    height: 2px;
+    width: 300px; }
+
+.card__pic {
+  margin-bottom: 8px; }
+
+.switchpic {
+  display: inline-block;
+  position: relative; }
+  .switchpic img {
+    display: block;
+    border-radius: 13px; }
+  .switchpic:after {
+    border-radius: 14px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0; }
+  .switchpic.active:after {
+    border: 2px solid red; }
+
+#card {
+  top: 0; }
+  #card .modal__body {
+    padding: 0 100px; }
+  #card .btn-more {
+    background: red;
+    margin-top: 30px;
+    margin-bottom: 30px; }
+    #card .btn-more:hover {
+      background: #b3b3b3; }
+  #card .modal-dialog {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 12px; }
+
+.qorder__form {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative; }
+  .qorder__form .row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    position: relative; }
+    .qorder__form .row:first-child {
+      margin-top: 0; }
+    .qorder__form .row input.form-control,
+    .qorder__form .row textarea {
+      font-family: "SegoeUIBoldItalic";
+      color: #fff;
+      background-color: #a8a8a8;
+      border: 1px solid #a8a8a8;
+      font-size: 17px;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      transition: all .3s; }
+      .qorder__form .row input.form-control:disabled,
+      .qorder__form .row textarea:disabled {
+        cursor: default;
+        background-color: #ccc; }
+        .qorder__form .row input.form-control:disabled::-webkit-input-placeholder,
+        .qorder__form .row textarea:disabled::-webkit-input-placeholder {
+          color: #ccc; }
+        .qorder__form .row input.form-control:disabled::-moz-placeholder,
+        .qorder__form .row textarea:disabled::-moz-placeholder {
+          color: #ccc; }
+        .qorder__form .row input.form-control:disabled:-ms-input-placeholder,
+        .qorder__form .row textarea:disabled:-ms-input-placeholder {
+          color: #ccc; }
+        .qorder__form .row input.form-control:disabled:focus::-webkit-input-placeholder,
+        .qorder__form .row textarea:disabled:focus::-webkit-input-placeholder {
+          transition: line-height 0.5s ease; }
+        .qorder__form .row input.form-control:disabled:focus::-moz-placeholder,
+        .qorder__form .row textarea:disabled:focus::-moz-placeholder {
+          transition: line-height 0.5s ease; }
+        .qorder__form .row input.form-control:disabled:focus:-ms-input-placeholder,
+        .qorder__form .row textarea:disabled:focus:-ms-input-placeholder {
+          transition: line-height 0.5s ease; }
+    .qorder__form .row input.form-control {
+      font-family: "SegoeUIBoldItalic";
+      border-radius: 32px;
+      height: 32px;
+      padding-bottom: 4px;
+      width: 32%; }
+      .qorder__form .row input.form-control::-webkit-input-placeholder {
+        color: #fff; }
+      .qorder__form .row input.form-control::-moz-placeholder {
+        color: #fff; }
+      .qorder__form .row input.form-control:-ms-input-placeholder {
+        color: #fff; }
+      .qorder__form .row input.form-control:focus::-webkit-input-placeholder {
+        transition: line-height 0.5s ease; }
+      .qorder__form .row input.form-control:focus::-moz-placeholder {
+        transition: line-height 0.5s ease; }
+      .qorder__form .row input.form-control:focus:-ms-input-placeholder {
+        transition: line-height 0.5s ease; }
+    .qorder__form .row textarea {
+      border-radius: 18px;
+      flex: 1;
+      overflow: hidden;
+      height: 95px;
+      color: #fff; }
+      .qorder__form .row textarea::-webkit-input-placeholder {
+        color: #fff; }
+      .qorder__form .row textarea::-moz-placeholder {
+        color: #fff; }
+      .qorder__form .row textarea:-ms-input-placeholder {
+        color: #fff; }
+      .qorder__form .row textarea:focus::-webkit-input-placeholder {
+        transition: line-height 0.5s ease; }
+      .qorder__form .row textarea:focus::-moz-placeholder {
+        transition: line-height 0.5s ease; }
+      .qorder__form .row textarea:focus:-ms-input-placeholder {
+        transition: line-height 0.5s ease; }
+    .qorder__form .row .error {
+      border: 1px solid red !important; }
+  .qorder__form .submit {
+    background-color: red;
+    border-radius: 40px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-family: "SegoeUIBoldItalic";
+    font-size: 17px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    transition: .3s background-color;
+    width: 214px; }
+    .qorder__form .submit:hover {
+      background-color: #b3b3b3; }
+    .qorder__form .submit:disabled {
+      background-color: #b3b3b3;
+      cursor: default; }
+  .qorder__form .policy {
+    margin-top: 20px; }
+  .qorder__form #msg {
+    padding-right: 80px; }
+  .qorder__form .sending,
+  .qorder__form .thank {
+    height: 238px;
+    padding-top: 105px; }
+
+#mainImg {
+  border-radius: 15px;
+  display: block; }
+
+.policy {
+  color: #000; }
+  .policy a {
+    color: red !important; }
+
+.user-access + label {
+  cursor: pointer;
+  font-size: 14px; }
+
+.user-access:not(checked) {
+  position: absolute;
+  opacity: 0; }
+
+.user-access:not(checked) + label {
+  color: #000;
+  display: block;
+  position: relative;
+  /* будем позиционировать псевдочекбокс относительно label */
+  padding: 3px 0 0 60px;
+  /* оставляем слева от label место под псевдочекбокс */ }
+  .user-access:not(checked) + label a {
+    color: #a8a8a8; }
+
+/* Оформление первой части чекбокса в выключенном состоянии (фон). */
+.user-access:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: 0;
+  width: 46px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #a8a8a8;
+  border-radius: 30px;
+  text-align: center; }
+
+/* Меняем фон чекбокса, когда он включен. */
+.user-access:checked + label:before {
+  color: red; }
+
+/* Сдвигаем переключатель чекбокса, когда он включен. */
+.user-access:checked + label:after {
+  content: '*';
+  position: absolute;
+  top: -6px;
+  left: 14px;
+  width: 22px;
+  height: 22px;
+  font-size: 36px;
+  color: red; }
+
+.sending {
+  text-align: center;
+  font-size: 17px;
+  height: 207px;
+  padding-top: 80px; }
 
 .fade {
   opacity: 0;

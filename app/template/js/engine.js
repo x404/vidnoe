@@ -14,6 +14,9 @@ $(document).ready(function(){
 	});
 
 
+	$('#card').on('shown.bs.modal', function (e) {
+		$('#card-slider').slick('reinit')
+	});
 
 	// scroll page
 	$('nav a[href*=\\#]:not([href=\\#])').click(function() {
@@ -29,6 +32,8 @@ $(document).ready(function(){
 		}
 	});
 
+
+	$('#qorder-form').validate();
 
 
 	$('#slider').slick({
@@ -60,6 +65,16 @@ $(document).ready(function(){
 		autoplaySpeed: 4000,
 		dots: true
 	});
+
+
+	$('#card-slider').slick({
+		slidesToShow: 7,
+		slidesToScroll: 5,
+		prevArrow: '',
+		nextArrow: '',
+		dots: false,
+		infinite: false
+	});	
 
 	// mobile-menu
 	$('#navbar').each(function(){
@@ -119,3 +134,36 @@ $(document).ready(function(){
 // 	})
 // });
 // =/заглушка для IE
+
+
+
+
+$(document).on('click', '.switchpic', function(e){
+	e.preventDefault();
+	let $this = this,
+		$link = this.href;
+
+	try{
+		document.querySelector('.switchpic.active').classList.remove('active');			
+	}
+	catch(e){
+	};
+
+	this.classList.add('active');
+	document.querySelector('#mainImg').src = $link;
+});
+
+
+$(function(){
+	$('.policy input').click(function(){
+		var $this = $(this),
+			$submit = $this.closest('.form-policy');
+
+		if ($this.is(':checked')){
+			$submit.find('.input, .form-control, .submit, textarea, input[type=radio]').removeAttr('disabled');
+		} else {
+			$submit.addClass('disabled');
+			$submit.find('.input, .form-control, .submit, textarea, input[type=radio]').attr('disabled', true);
+		}
+	})
+});
