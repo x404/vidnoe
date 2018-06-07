@@ -1023,7 +1023,7 @@ img.justifycenter, table.justifycenter {
     padding-right: 80px; }
   .qorder__form .sending,
   .qorder__form .thank {
-    height: 238px;
+    height: 280px;
     padding-top: 105px; }
 
 #mainImg {
@@ -1081,11 +1081,17 @@ img.justifycenter, table.justifycenter {
   font-size: 36px;
   color: red; }
 
-.sending {
-  text-align: center;
+.sending,
+.thank {
+  background: #fff;
+  bottom: -8px;
   font-size: 17px;
   height: 207px;
-  padding-top: 80px; }
+  left: 0;
+  padding-top: 80px;
+  position: absolute;
+  text-align: center;
+  width: 100%; }
 
 .fade {
   opacity: 0;

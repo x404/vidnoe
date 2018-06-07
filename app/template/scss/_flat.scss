@@ -193,7 +193,7 @@
 
 		.sending,
 		.thank{
-			height: 238px;
+			height: 280px;
 			padding-top: 105px;
 		}
 	}
@@ -266,9 +266,20 @@
 }
 
 
-.sending{
-	text-align: center;
+.sending,
+.thank{
+	background: $color2;
+	bottom: -8px;
 	font-size: 17px;
 	height: 207px;
+	left: 0;
 	padding-top: 80px;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
+
+.thank{
+	// background: #fff;
 }

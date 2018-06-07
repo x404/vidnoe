@@ -32,8 +32,35 @@ $(document).ready(function(){
 		}
 	});
 
+	// var thank = '<div class="thank text-center"><p>Спасибо за заказ продукта на нашем сайте. В ближайщее время с вами свяжутся наши менеджеры для уточнения всех деталей.</p></div>';
+	var thank = '<div class="thank text-center"><p>В ближайщее время с вами свяжутся наши менеджеры для уточнения всех деталей</p></div>';
+	var errorTxt = 'Возникла ошибка при отправке заявки!';
+	$('#qorder-form').validate({
+		submitHandler: function(form){
+			var strSubmit=$(form).serialize();
+			// $(form).find('fieldset').hide();
+			$(form).append('<div class="sending">Идет отправка ...</div>');
 
-	$('#qorder-form').validate();
+			$.ajax({
+				type: "POST",
+				url: $(form).attr('action'),
+				data: strSubmit,
+				success: function(){
+					document.querySelector('.sending').remove();
+					$(form).append(thank);
+					startClock('qorder-form');
+				},
+				error: function(){
+					alert(errorTxt);
+					$(form).find('fieldset').show();
+					$('.sending').remove();
+				}
+			})
+			.fail(function(error){
+				alert(errorTxt);
+			});
+		}
+	});
 
 
 	$('#slider').slick({
@@ -167,3 +194,34 @@ $(function(){
 		}
 	})
 });
+
+
+
+
+var timer,
+	sec = 3;
+
+
+function showTime(sendform){
+	sec = sec-1;
+	if (sec <=0) {
+		stopClock();
+
+		let form = $('#' + sendform);
+
+		 form.find('.thank').fadeOut('normal',function(){
+			form.find('.thank').remove();
+			form.find('.form-control, textarea').val('');
+		});
+}
+}
+function stopClock(){
+	window.clearInterval(timer);
+	timer = null;
+	sec = 3;
+}
+
+function startClock(sendform){
+	if (!timer)
+		timer = window.setInterval("showTime('" + sendform + "')",1000);
+}
