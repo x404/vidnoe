@@ -269,6 +269,7 @@ $(document).ready(function(){
 	});	
 
 	// mobile-menu
+	// mobile-menu
 	$('#navbar').each(function(){
 		var $this = $(this),
 			$link = $('.navbar-toggle'),
@@ -280,18 +281,14 @@ $(document).ready(function(){
 			},
 			openMenu = function(e){
 				e.preventDefault();
-				h = $(document).height();
 				$('body').addClass('o-menu');
-				$('#navbar').height(h);
-
 			},
 			closeMenu = function(e){
 				e.preventDefault();
 				$('body').removeClass('o-menu');
-				$('#navbar').height('auto');
 			};
 		init();
-	});	
+	});
 
 	$('#totop').click(function (){
 		$('body, html').animate({
