@@ -542,9 +542,10 @@ img.justifycenter, table.justifycenter {
 .review__cell {
   line-height: 1.8;
   margin-bottom: 15px;
-  width: 47%; }
+  width: 95%; }
   .review__cell a {
     height: 100%;
+    min-height: 155px;
     display: block;
     background-color: #fff;
     padding: 15px 18px;
@@ -1420,7 +1421,7 @@ img.justifycenter, table.justifycenter {
     height: auto;
     min-height: 315px; }
   #slider .slick-arrow {
-    display: none; }
+    display: none !important; }
   #reviews-slider .flexbox {
     display: block; }
   .review__cell {

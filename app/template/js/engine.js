@@ -79,13 +79,63 @@ $(document).ready(function(){
 
 
 	$('#reviews-slider').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
+		slidesToShow: 2,
+		slidesToScroll: 2,
 		prevArrow: '',
 		nextArrow: '',
 		autoplay: false,
 		autoplaySpeed: 4000,
-		dots: true
+		dots: true,
+		responsive: [
+			{
+			  breakpoint: 630,
+			  settings: {
+			    slidesToShow: 1,
+			    centerMode: true,
+			    centerPadding: '110px'
+			  }
+			},
+			{
+			  breakpoint: 580,
+			  settings: {
+			    slidesToShow: 1,
+			    centerMode: true,
+			    centerPadding: '70px'
+			  }
+			},
+			{
+			  breakpoint: 490,
+			  settings: {
+			    slidesToShow: 1,
+			    centerMode: true,
+			    centerPadding: '40px'
+			  }
+			},
+			{
+			  breakpoint: 430,
+			  settings: {
+			    slidesToShow: 1,
+			    centerMode: true,
+			    centerPadding: '20px'
+			  }
+			},
+			{
+			  breakpoint: 380,
+			  settings: {
+			    slidesToShow: 1,
+			    centerMode: true,
+			    centerPadding: '10px'
+			  }
+			},
+			{
+			breakpoint: 350,
+			  settings: {
+			    slidesToShow: 1,
+			    centerMode: true,
+			    centerPadding: '20px'
+			  }
+			}
+		]
 	});
 
 	$('#actions-slider').slick({
@@ -158,7 +208,6 @@ $(document).ready(function(){
 			  }
 			}
 		]
-
 	});
 
 
