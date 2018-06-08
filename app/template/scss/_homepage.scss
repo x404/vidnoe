@@ -307,9 +307,11 @@
 	justify-content: center;
 	margin-top: 18px;
 	li{
+		// display: inline-block;
 		margin: 0 7px;
 	}
 	button{
+		padding: 0;
 		background-color: #ccc;
 		border-radius: 50%;
 		border: none;
@@ -377,7 +379,7 @@
 		display: flex;
 		justify-content: flex-end;
 		flex-direction: column;
-		p{
+		p:not(.more){
 			color: $color1;
 			font-size: 18px;
 			font-family: "SegoeUIBold";

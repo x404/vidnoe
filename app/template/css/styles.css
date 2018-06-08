@@ -140,15 +140,18 @@ h3 {
 
 strong,
 .bold {
+  font-weight: normal;
   font-family: "SegoeUIBold"; }
 
 em, i,
 .italic,
 .policy {
+  font-style: normal;
   font-family: "SegoeUIItalic"; }
 
 strong em,
 em strong {
+  font-weight: normal;
   font-family: "SegoeUIBoldItalic"; }
 
 .tdn, .policy a {
@@ -556,6 +559,7 @@ img.justifycenter, table.justifycenter {
   .slick-dots li {
     margin: 0 7px; }
   .slick-dots button {
+    padding: 0;
     background-color: #ccc;
     border-radius: 50%;
     border: none;
@@ -606,7 +610,7 @@ img.justifycenter, table.justifycenter {
   display: flex;
   justify-content: flex-end;
   flex-direction: column; }
-  .action__bottom p {
+  .action__bottom p:not(.more) {
     color: #000;
     font-size: 18px;
     font-family: "SegoeUIBold";
@@ -842,7 +846,7 @@ img.justifycenter, table.justifycenter {
   text-align: center; }
 
 .card__shortdesc {
-  margin: 10px 0 -5px; }
+  margin: 10px 0 20px; }
 
 .card__price {
   color: #000; }
@@ -894,6 +898,9 @@ img.justifycenter, table.justifycenter {
   .switchpic.active:after {
     border: 2px solid red; }
 
+.modal-open {
+  overflow: hidden; }
+
 #card {
   top: 0; }
   #card .modal__body {
@@ -907,7 +914,8 @@ img.justifycenter, table.justifycenter {
   #card .modal-dialog {
     padding-left: 25px;
     padding-right: 25px;
-    padding-top: 12px; }
+    padding-top: 12px;
+    transform: translate(0, -5%); }
 
 .qorder__form {
   margin-left: auto;
@@ -1327,3 +1335,133 @@ img.justifycenter, table.justifycenter {
 
 ::-ms-clear {
   display: none; }
+
+@media (max-width: 1199px) {
+  .steps .flexbox {
+    padding-left: 50px;
+    padding-right: 50px; }
+  .flats .flat {
+    width: 263px; }
+  .action__item {
+    width: 290px; }
+  .action__pic img {
+    width: 100%; }
+  .action__text {
+    font-size: 15px;
+    padding-left: 0; } }
+
+@media (max-width: 1024px) {
+  .advantages .cell {
+    width: 33%; }
+  .tab-content > .active {
+    justify-content: space-around; } }
+
+@media (max-width: 991px) {
+  .steps .flexbox {
+    padding-left: 0;
+    padding-right: 0; }
+  #totop {
+    display: none; }
+  .footer__left {
+    width: 60%; } }
+
+@media (max-width: 760px) {
+  .steps .flexbox {
+    display: block; }
+    .steps .flexbox:after {
+      background-image: linear-gradient(to bottom, #fff 0, grey 30%, grey 70%, #fff 100%);
+      width: 1px;
+      height: 100%;
+      left: 50%;
+      z-index: -1; }
+  .steps .step {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px; }
+  .flats .nav-tabs {
+    display: block; }
+    .flats .nav-tabs a {
+      margin-bottom: 15px;
+      margin-left: 0;
+      margin-right: 0; } }
+
+@media (max-width: 700px) {
+  #slider .text {
+    margin-left: -200px;
+    width: 400px; }
+    #slider .text p {
+      font-size: 20px !important; }
+  .footer .flexbox {
+    display: block; }
+  .footer__left {
+    width: 100%; }
+  .footer .kreotif {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media (max-width: 650px) {
+  .advantages .cell {
+    width: 50%; }
+  .flats .flat {
+    margin-right: 0; } }
+
+@media (max-width: 585px) {
+  .flats .flat {
+    margin-left: auto;
+    margin-right: auto; }
+  .tab-content > .active {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  .pricelist {
+    margin-top: 50px; }
+  .action__body {
+    height: auto;
+    min-height: 315px; }
+  #slider .slick-arrow {
+    display: none; }
+  #reviews-slider .flexbox {
+    display: block; }
+  .review__cell {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%; } }
+
+@media (max-width: 450px) {
+  #slider .text {
+    width: 90%;
+    left: 5%;
+    margin-left: 0;
+    padding-left: 5px;
+    padding-right: 5px; }
+    #slider .text p {
+      font-size: 18px !important; }
+  .advantages {
+    padding-left: 15px !important;
+    padding-right: 15px; }
+  .advantages .text,
+  .pricelist .text {
+    text-align: justify; }
+  .content-section .title {
+    font-size: 30px;
+    padding-left: 5px;
+    padding-right: 5px; }
+  .steps .flexbox:after {
+    display: none; }
+  .ya-share2__item {
+    margin-bottom: 5px !important; } }
+
+@media (max-width: 375px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0; }
+  .action__item {
+    width: 260px;
+    text-align: center; }
+    .action__item .tel {
+      display: block; }
+  .action__text {
+    margin-bottom: 10px; }
+  .advantages .cell {
+    width: 100%; } }

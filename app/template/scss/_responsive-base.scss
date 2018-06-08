@@ -1,14 +1,217 @@
 @media (max-width: 1199px){
+	.steps .flexbox{
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+
+	.flats .flat{
+		width: 263px;
+	}
+
+	.action{
+		&__item{
+			width: 290px;
+		}
+		&__pic{
+			img{
+				width: 100%;
+			}
+		}
+		&__text{
+			font-size: 15px;
+			padding-left: 0;
+		}
+	}
 }
 
 @media (max-width: 1024px){
+	.advantages .cell{
+		width: 33%;
+	}
+
+	.tab-content>.active{
+		justify-content: space-around;
+	}
 }
 
 @media (max-width: 991px){
+	.steps .flexbox{
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	#totop{
+		display: none;
+	}
+
+	.footer__left{
+		width: 60%;
+	}
 }
 
-@media (max-width: 767px){
+@media (max-width: 760px){
+	.steps{
+		.flexbox{
+			display: block;
+			&:after{
+				background-image: linear-gradient(to bottom,#fff 0,grey 30%,grey 70%,#fff 100%);
+				width: 1px;
+				height: 100%;
+				left: 50%;
+				z-index: -1;
+			}
+		}
+		.step{
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 25px;
+		}
+	}
+
+	.flats .nav-tabs{
+		display: block;
+		a{
+			margin-bottom: 15px;
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
 }
 
-@media (max-width: 545px){
+@media (max-width: 700px){
+	#slider .text{
+		margin-left: -200px;
+		width: 400px;
+		p{
+			font-size: 20px !important;
+		}
+	}
+
+	.footer{
+		.flexbox{
+			display: block;
+		}
+		&__left{
+			width: 100%;
+		}
+		.kreotif{
+			margin-top: 15px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
+
+
+@media (max-width: 650px){
+	.advantages .cell{
+		width: 50%;
+	}
+
+	.flats .flat{
+		margin-right: 0;
+	}
+}
+
+
+@media (max-width: 585px){
+	.flats .flat{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.tab-content>.active{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.pricelist{
+		margin-top: 50px;
+	}
+
+	.action__body{
+		height: auto;
+		min-height: 315px;
+	}
+
+	#slider .slick-arrow{
+		display: none;
+	}
+
+	#reviews-slider .flexbox{
+		display: block;
+	}
+
+	.review__cell{
+		margin-left: auto;
+		margin-right: auto;
+		width: 90%;
+	}
+}
+
+
+@media (max-width: 450px){
+	#slider{
+		.text{
+			width: 90%;
+			left: 5%;
+			margin-left: 0;
+			padding-left: 5px;
+			padding-right: 5px;
+			p{
+				font-size: 18px !important;
+			}
+		}
+	}
+
+	.advantages{
+		padding-left: 15px !important;
+		padding-right: 15px;
+	}
+
+	.advantages,
+	.pricelist{
+		.text{
+			text-align: justify;
+		}
+	}
+
+	.content-section .title{
+		font-size: 30px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	.steps .flexbox:after{
+		display: none;
+	}
+
+	.ya-share2__item{
+		margin-bottom: 5px !important;
+	}
+}
+
+
+@media (max-width: 375px){
+	.container{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.action{
+		&__item{
+			width: 260px;
+			text-align: center;
+			.tel{
+				display: block;
+			}
+		}
+		&__text{
+			margin-bottom: 10px;
+		}
+	}
+
+	.advantages .cell{
+		width: 100%;
+	}
+
+
 }

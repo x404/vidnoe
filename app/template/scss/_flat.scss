@@ -7,7 +7,7 @@
 		text-align: center;
 	}
 	&__shortdesc{
-		margin: 10px 0 -5px;
+		margin: 10px 0 20px;
 	}
 
 	&__price{
@@ -78,6 +78,10 @@
 	}
 }
 
+.modal-open{
+	overflow: hidden;
+}
+
 #card{
 	top: 0;
 	.modal__body{
@@ -95,9 +99,9 @@
 		padding-left: 25px;
 		padding-right: 25px;
 		padding-top: 12px;
+		transform: translate(0, -5%)
 	}
 }
-
 
 
 .qorder
@@ -281,5 +285,5 @@
 
 
 .thank{
-	// background: #fff;
+	// background: #fff;	
 }

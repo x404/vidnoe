@@ -15,8 +15,13 @@ $(document).ready(function(){
 
 
 	$('#card').on('shown.bs.modal', function (e) {
-		$('#card-slider').slick('reinit')
+		$('#card-slider').slick('reinit');
+		 $('#card #focus').trigger('focus')
 	});
+
+	$('#card').on('show.bs.modal', function (e) {
+		 // $('.card__gallery .slick-current').trigger('click')
+	})
 
 	// scroll page
 	$('nav a[href*=\\#]:not([href=\\#])').click(function() {
@@ -90,7 +95,70 @@ $(document).ready(function(){
 		nextArrow: '',
 		autoplay: false,
 		autoplaySpeed: 4000,
-		dots: true
+		dots: true,
+		responsive: [
+			{
+			  breakpoint: 1199,
+			  settings: {
+			    slidesToShow: 2
+			  }
+			},
+			{
+			  breakpoint: 767,
+			  settings: {
+			    slidesToShow: 2
+			  }
+			},
+			{
+			  breakpoint: 630,
+			  settings: {
+			    slidesToShow: 1,
+			    centerMode: true,
+			    centerPadding: '110px'
+			  }
+			},
+			{
+			  breakpoint: 580,
+			  settings: {
+			    slidesToShow: 1,
+			    centerMode: true,
+			    centerPadding: '70px'
+			  }
+			},
+			{
+			  breakpoint: 490,
+			  settings: {
+			    slidesToShow: 1,
+			    centerMode: true,
+			    centerPadding: '40px'
+			  }
+			},
+			{
+			  breakpoint: 430,
+			  settings: {
+			    slidesToShow: 1,
+			    centerMode: true,
+			    centerPadding: '20px'
+			  }
+			},
+			{
+			  breakpoint: 380,
+			  settings: {
+			    slidesToShow: 1,
+			    centerMode: true,
+			    centerPadding: '10px'
+			  }
+			},
+			{
+			breakpoint: 350,
+			  settings: {
+			    slidesToShow: 1,
+			    centerMode: true,
+			    centerPadding: '15px'
+			  }
+			}
+		]
+
 	});
 
 
