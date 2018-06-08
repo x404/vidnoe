@@ -1028,8 +1028,6 @@ img.justifycenter, table.justifycenter {
       cursor: default; }
   .qorder__form .policy {
     margin-top: 20px; }
-  .qorder__form #msg {
-    padding-right: 80px; }
   .qorder__form .sending,
   .qorder__form .thank {
     height: 280px;
@@ -1349,7 +1347,13 @@ img.justifycenter, table.justifycenter {
     width: 100%; }
   .action__text {
     font-size: 15px;
-    padding-left: 0; } }
+    padding-left: 0; }
+  .modal-dialog {
+    width: 900px; }
+  .card__pic img {
+    max-width: 100%; }
+  #card .modal__body {
+    padding: 0 15px; } }
 
 @media (max-width: 1024px) {
   .advantages .cell {
@@ -1364,7 +1368,35 @@ img.justifycenter, table.justifycenter {
   #totop {
     display: none; }
   .footer__left {
-    width: 60%; } }
+    width: 60%; }
+  .modal-dialog {
+    padding: 20px;
+    width: 650px; }
+  .card__pic {
+    text-align: center; }
+  .card__text {
+    font-size: 15px; }
+  #card-slider .slick-slide {
+    text-align: center; }
+  .switchpic img {
+    margin-left: auto;
+    margin-right: auto; } }
+
+@media (max-width: 768px) {
+  .qorder__form .row:first-child {
+    display: block; }
+  .qorder__form .row {
+    margin-top: 12px; }
+    .qorder__form .row input.form-control {
+      display: block;
+      width: 100%; }
+  .qorder__form .sending,
+  .qorder__form .thank {
+    height: 370px;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; } }
 
 @media (max-width: 760px) {
   .steps .flexbox {
@@ -1384,7 +1416,9 @@ img.justifycenter, table.justifycenter {
     .flats .nav-tabs a {
       margin-bottom: 15px;
       margin-left: 0;
-      margin-right: 0; } }
+      margin-right: 0; }
+  .modal-dialog {
+    width: 550px; } }
 
 @media (max-width: 700px) {
   #slider .text {
@@ -1427,7 +1461,16 @@ img.justifycenter, table.justifycenter {
   .review__cell {
     margin-left: auto;
     margin-right: auto;
-    width: 90%; } }
+    width: 90%; }
+  .modal-dialog {
+    padding-top: 30px;
+    width: 95%; } }
+
+@media (max-width: 485px) {
+  .qorder__form .row input.form-control,
+  .qorder__form .row textarea {
+    width: 100%;
+    font-size: 15px; } }
 
 @media (max-width: 450px) {
   #slider .text {
@@ -1465,4 +1508,24 @@ img.justifycenter, table.justifycenter {
   .action__text {
     margin-bottom: 10px; }
   .advantages .cell {
-    width: 100%; } }
+    width: 100%; }
+  .qorder__form {
+    padding-left: 0;
+    padding-right: 0; } }
+
+@media (max-width: 350px) {
+  #card .modal-dialog {
+    padding-left: 15px;
+    padding-right: 15px; }
+  #card .modal__body {
+    padding: 0; }
+  .card__gallery:after {
+    display: none; }
+  .card__text {
+    font-size: 14px; }
+  .card__contacts {
+    font-size: 15px; }
+  .qorder__form .row input.form-control,
+  .qorder__form .row textarea {
+    padding-left: 10px;
+    padding-right: 10px; } }

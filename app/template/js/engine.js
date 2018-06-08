@@ -217,7 +217,55 @@ $(document).ready(function(){
 		prevArrow: '',
 		nextArrow: '',
 		dots: false,
-		infinite: false
+		infinite: false,
+		responsive: [
+			{
+			  breakpoint: 1199,
+			  settings: {
+			    slidesToShow: 5
+			  }
+			},
+			{
+			  breakpoint: 991,
+			  settings: {
+			    slidesToShow: 4
+			  }
+			},
+			{
+			  breakpoint: 761,
+			  settings: {
+			    slidesToShow: 3
+			  }
+			},
+			{
+			  breakpoint: 490,
+			  settings: {
+			    slidesToShow: 2,
+			    centerPadding: '40px'
+			  }
+			},
+			{
+			  breakpoint: 430,
+			  settings: {
+			    slidesToShow: 1,
+			    centerPadding: '20px'
+			  }
+			},
+			{
+			  breakpoint: 380,
+			  settings: {
+			    slidesToShow: 1,
+			    centerPadding: '10px'
+			  }
+			},
+			{
+			breakpoint: 350,
+			  settings: {
+			    slidesToShow: 1,
+			    centerPadding: '15px'
+			  }
+			}
+		]
 	});	
 
 	// mobile-menu
