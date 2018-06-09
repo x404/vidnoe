@@ -1,7 +1,5 @@
 <div class="card__title">2 КОМНАТНАЯ КВАРТИРА </div>
 <div class="card__shortdesc">Студия, 52 м², 2/2 эт. - <span class="card__price">4500 руб/сутки</span></div>
-<p class="more"><button type="button" class="btn-more">забронировать</button></p>
-
 <div class="card__gallery">
 	<div class="card__pic">
 		<img src="/images/flat1/mainpic.jpg" alt="" id="mainImg" />
@@ -42,3 +40,4 @@
 	<br>
 	<p>Спальные места: 2+2 , WI-FI интернет , ЖК телевизор , Стиральная машина , Микроволновая печь , Постельное белье + полотенца.</p>
 </div>
+<p class="card__contacts text-center"><strong>БРОНИРУЙ! +7 926 217 12 99</strong></p>

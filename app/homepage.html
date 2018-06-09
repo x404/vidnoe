@@ -27,10 +27,6 @@
 	<link href="/template/css/styles-ie.css" rel="stylesheet" type="text/css" />
 <![endif]-->
 
-<!--[if lt IE 9]>
-	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-
 </head>
 <body data-spy="scroll" data-target="#navbar" data-offset="110">
 
@@ -883,7 +879,7 @@
 
 
 <!-- =advantage -->
-<div class="modal fade" id="advantage1" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade" id="advantage1" tabindex="-1" aria-hidden="true" role="dialog" >
 	<div class="modal-dialog" role="document">
 		<button type="button" data-dismiss="modal" class="close-modal" aria-label="Закрыть">
 			<svg width="16" height="16">
@@ -900,10 +896,51 @@
 </div>
 <!-- =/advantage -->
 
+<!-- =card info -->
+<div class="modal fade" id="card" tabindex="-1"  aria-hidden="true" role="dialog" >
+	<div class="modal-dialog" role="document">
+		<button type="button" data-dismiss="modal" class="close-modal" aria-label="Закрыть" >
+			<svg width="16" height="16">
+				<line x1="0" y1="0" x2="16" y2="16"/>
+				<line x1="16" y1="0" x2="0" y2="16"/>
+			</svg>
+		</button>
+		<div class="modal__content">
+			<!-- <input type="text" autofocus value="" name="autofocus" id="autofocus"> -->
+			<div class="modal__body" id="cardbody" >
+			</div>
+			<form action="#" method="post" class="qorder__form form-policy" id="qorder-form">
+				<fieldset>
+					<div class="row">
+						<label for="name" class="visually-hidden">ваше имя</label>
+						<input name="name" id="name" type="text" value="" class="form-control required" required="required" placeholder="как вас зовут ?" autofocus>
+						<label for="email" class="visually-hidden">ваш e-mail</label>
+						<input name="email" id="email" type="email" value="" class="form-control email" placeholder="ваш e-mail">
+						<label for="tel" class="visually-hidden">ваш номер телефона</label>
+						<input name="tel" id="tel" type="tel" value="" class="form-control required tel" required="required" placeholder="ваш номер телефона *">
+					</div>
+					<div class="row">
+						<label for="msg" class="visually-hidden">текст вашего сообщения ...</label>
+						<textarea name="msg" id="msg" cols="30" rows="10" placeholder="текст вашего сообщения ..."></textarea>
+					</div>
+					<input type="hidden" name="workemail" value="" />
+					<input type="hidden" name="qorder" value="1" />
+					<input type="submit" class="submit btn" value="забронировать" />
+					<div class="policy">
+						<input type="checkbox" id="checkbox1" value="" name="checkbox" checked="checked" class="user-access">
+						<label for="checkbox1">Я Согласен на обработку персональных данных и принимаю условия <a href="#" title="" target="_blank">Пользовательского соглашения</a></label>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- =/card info -->
+
 
 
 <!-- =modal info -->
-<div class="modal fade" id="infomodal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade" id="infomodal" tabindex="-1" aria-hidden="true" role="dialog" >
 	<div class="modal-dialog" role="document">
 		<button type="button" data-dismiss="modal" class="close-modal" aria-label="Закрыть">
 			<svg width="16" height="16">
@@ -920,101 +957,11 @@
 
 
 
-<!-- =modal info -->
-<div class="modal fade" id="card" tabindex="-1" role="dialog" aria-hidden="true">
-	<div class="modal-dialog" role="document">
-		<button type="button" data-dismiss="modal" class="close-modal" aria-label="Закрыть">
-			<svg width="16" height="16">
-				<line x1="0" y1="0" x2="16" y2="16"/>
-				<line x1="16" y1="0" x2="0" y2="16"/>
-			</svg>
-		</button>
-		<div class="modal__content">
-			<div class="modal__body">
-				<input type="text" id="focus" value="" class="visually-hidden" />
-				<div class="card__title">2 КОМНАТНАЯ КВАРТИРА </div>
-				<div class="card__shortdesc">Студия, 52 м², 2/2 эт. - <span class="card__price">4500 руб/сутки</span></div>
-				<!-- <p class="more"><button type="button" class="btn-more">забронировать</button></p> -->
-
-				<div class="card__gallery">
-					<div class="card__pic">
-						<img src="/images/flat1/mainpic.jpg" alt="" id="mainImg" />
-					</div>
-					<div id="card-slider">
-						<div>
-							<a href="/images/flat1/mainpic.jpg" title="" class="switchpic active"><img src="/images/flat1/thumb-1.jpg" alt="" /></a>
-						</div>
-						<div>
-							<a href="/images/flat1/mainpic2.jpg" title="" class="switchpic"><img src="/images/flat1/thumb-2.jpg" alt="" /></a>
-						</div>
-						<div>
-							<a href="/images/flat1/mainpic3.jpg" title="" class="switchpic"><img src="/images/flat1/thumb-3.jpg" alt="" /></a>
-						</div>
-						<div>
-							<a href="/images/flat1/mainpic3.jpg" title="" class="switchpic"><img src="/images/flat1/thumb-4.jpg" alt="" /></a>
-						</div>
-						<div>
-							<a href="/images/flat1/mainpic2.jpg" title="" class="switchpic"><img src="/images/flat1/thumb-5.jpg" alt="" /></a>
-						</div>
-						<div>
-							<a href="/images/flat1/mainpic.jpg" title="" class="switchpic"><img src="/images/flat1/thumb-6.jpg" alt="" /></a>
-						</div>
-						<div>
-							<a href="/images/flat1/mainpic3.jpg" title="" class="switchpic"><img src="/images/flat1/thumb-7.jpg" alt="" /></a>
-						</div>	
-						<div>
-							<a href="/images/flat1/mainpic.jpg" title="" class="switchpic"><img src="/images/flat1/thumb-7.jpg" alt="" /></a>
-						</div>						
-					</div>
-				</div>
-
-				<div class="card__address">
-					Московская область, Ленинский район, Видное, Советская улица, 12
-				</div>
-				<div class="card__text">
-					<p>Посуточная Аренда 2-х комнатной квартиры . Имеется вся необходимая мебель и техника, 4 спальных места, пастельное белье, посуда, гладильная доска, утюг, интернет-WiFi бесплатный, парковка на территории коттеджа. 2 минуты пешком да станции Расторгуево, автобусной остановки до метро. Срок аренды от 3 дней.</p> 
-					<br>
-					<p>Спальные места: 2+2 , WI-FI интернет , ЖК телевизор , Стиральная машина , Микроволновая печь , Постельное белье + полотенца.</p>
-				</div>
-				<p class="card__contacts text-center"><strong>БРОНИРУЙ! +7 926 217 12 99</strong></p>
-			</div>
-
-			<form action="#" method="post" class="qorder__form form-policy" id="qorder-form">
-				<fieldset>
-					<div class="row">
-						<label for="name" class="visually-hidden">ваше имя</label>
-						<input name="name" id="name" type="text" value="" class="form-control required" required="required" placeholder="как вас зовут ?">
-						<label for="email" class="visually-hidden">ваш e-mail</label>
-						<input name="email" id="email" type="email" value="" class="form-control email" placeholder="ваш e-mail">
-						<label for="tel" class="visually-hidden">ваш номер телефона</label>
-						<input name="tel" id="tel" type="tel" value="" class="form-control required tel" required="required" placeholder="ваш номер телефона *">
-					</div>
-					<div class="row">
-						<label for="msg" class="visually-hidden">текст вашего сообщения ...</label>
-						<textarea name="msg" id="msg" cols="30" rows="10" placeholder="текст вашего сообщения ..."></textarea>
-					</div>
-					<input type="hidden" name="workemail" value="" />
-					<input type="hidden" name="qorder" value="1" />
-					<input type="submit" class="submit btn" value="забронировать" />
-					<div class="policy">
-						<input type="checkbox" id="checkbox1" value="" name="checkbox" checked="checked" class="user-access">
-						<label for="checkbox1">Я Согласен на обработку персональных данных и принимаю условия <a href="##" title="" target="_blank">Пользовательского соглашения</a></label>
-					</div>
-				</fieldset>
-			</form>
-		</div>
-	</div>
-</div>
-<!-- =/modal info -->
-
 
 
 
 
 <div id="outdated"></div>
-
-<!-- <script src="/template/js/owl.carousel.min.js"></script> -->
-<!-- <link rel="stylesheet" property="stylesheet" href="template/css/owl.carousel.css"> -->
 
 <script src="/template/js/slick.min.js"></script>
 <script src="/template/js/engine.js"></script>

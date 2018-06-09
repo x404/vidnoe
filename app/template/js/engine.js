@@ -1,3 +1,64 @@
+function sliderInit(){
+	$('#card-slider').slick({
+		slidesToShow: 7,
+		slidesToScroll: 5,
+		prevArrow: '',
+		nextArrow: '',
+		dots: false,
+		infinite: false,
+		responsive: [
+			{
+			  breakpoint: 1199,
+			  settings: {
+			    slidesToShow: 5
+			  }
+			},
+			{
+			  breakpoint: 991,
+			  settings: {
+			    slidesToShow: 4
+			  }
+			},
+			{
+			  breakpoint: 761,
+			  settings: {
+			    slidesToShow: 3
+			  }
+			},
+			{
+			  breakpoint: 490,
+			  settings: {
+			    slidesToShow: 2,
+			    centerPadding: '40px'
+			  }
+			},
+			{
+			  breakpoint: 430,
+			  settings: {
+			    slidesToShow: 1,
+			    centerPadding: '20px'
+			  }
+			},
+			{
+			  breakpoint: 380,
+			  settings: {
+			    slidesToShow: 1,
+			    centerPadding: '10px'
+			  }
+			},
+			{
+			breakpoint: 350,
+			  settings: {
+			    slidesToShow: 1,
+			    centerPadding: '15px'
+			  }
+			}
+		]
+	});	
+
+};
+
+
 $(document).ready(function(){
 	'use strict';
 
@@ -14,14 +75,27 @@ $(document).ready(function(){
 	});
 
 
+	$('#card').on('hidden.bs.modal', function (e) {
+		// $(document).off('focusin.modal');
+	})
+
+	// $('#card').modal('show');
+
+	
 	$('#card').on('shown.bs.modal', function (e) {
-		$('#card-slider').slick('reinit');
-		 $('#card #focus').trigger('focus')
+		var $this = $(e.relatedTarget),
+			// id = $this.data('id'),
+			id = 'card.php',
+			url = id;
+
+		$.ajax({
+			url: url
+		}).done(function(data) {
+			$('#card #cardbody').html(data);
+			sliderInit();	
+		});
 	});
 
-	$('#card').on('show.bs.modal', function (e) {
-		 // $('.card__gallery .slick-current').trigger('click')
-	})
 
 	// scroll page
 	$('nav a[href*=\\#]:not([href=\\#])').click(function() {
@@ -211,62 +285,6 @@ $(document).ready(function(){
 	});
 
 
-	$('#card-slider').slick({
-		slidesToShow: 7,
-		slidesToScroll: 5,
-		prevArrow: '',
-		nextArrow: '',
-		dots: false,
-		infinite: false,
-		responsive: [
-			{
-			  breakpoint: 1199,
-			  settings: {
-			    slidesToShow: 5
-			  }
-			},
-			{
-			  breakpoint: 991,
-			  settings: {
-			    slidesToShow: 4
-			  }
-			},
-			{
-			  breakpoint: 761,
-			  settings: {
-			    slidesToShow: 3
-			  }
-			},
-			{
-			  breakpoint: 490,
-			  settings: {
-			    slidesToShow: 2,
-			    centerPadding: '40px'
-			  }
-			},
-			{
-			  breakpoint: 430,
-			  settings: {
-			    slidesToShow: 1,
-			    centerPadding: '20px'
-			  }
-			},
-			{
-			  breakpoint: 380,
-			  settings: {
-			    slidesToShow: 1,
-			    centerPadding: '10px'
-			  }
-			},
-			{
-			breakpoint: 350,
-			  settings: {
-			    slidesToShow: 1,
-			    centerPadding: '15px'
-			  }
-			}
-		]
-	});	
 
 	// mobile-menu
 	// mobile-menu

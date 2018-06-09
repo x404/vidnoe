@@ -712,7 +712,7 @@ img.justifycenter, table.justifycenter {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 999;
+  z-index: 9999;
   display: none;
   overflow: hidden;
   outline: 0; }
@@ -722,6 +722,12 @@ img.justifycenter, table.justifycenter {
   .modal.show .modal-dialog {
     transform: translate(0, 0); }
 
+#card-slider {
+  display: none; }
+
+.slick-initialized {
+  display: block !important; }
+
 .modal-open .header,
 .modal-open .container,
 .modal-open #slider,
@@ -730,7 +736,8 @@ img.justifycenter, table.justifycenter {
 
 .modal-open .modal {
   overflow-x: hidden;
-  overflow-y: auto; }
+  overflow-y: auto;
+  transform: translateZ(0); }
 
 .close-modal {
   background-color: #ff4c4c;

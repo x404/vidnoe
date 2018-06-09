@@ -5,7 +5,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 999;
+  z-index: 9999;
   display: none;
   overflow: hidden;
   // Prevent Chrome on Windows from adding a focus outline. For details, see
@@ -23,6 +23,16 @@
   &.show .modal-dialog { transform: translate(0, 0); }
 }
 
+
+#card-slider{
+	display: none;
+}
+
+.slick-initialized{
+	display: block !important;
+}
+
+
 .modal-open{
 	.header,
 	.container,
@@ -34,6 +44,7 @@
 .modal-open .modal {
 	overflow-x: hidden;
 	overflow-y: auto;
+	transform: translateZ(0);
 }
 
 
