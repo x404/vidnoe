@@ -114,7 +114,7 @@
 	.header{
 		position: static;
 	}
-	#slider{
+	.slider{
 		margin-top: 0;
 	}
 	.logo{
@@ -156,7 +156,7 @@
 }
 
 @media (max-width: 700px){
-	#slider .text{
+	.slider .text{
 		margin-left: -200px;
 		width: 400px;
 		p{
@@ -224,7 +224,7 @@
 		min-height: 315px;
 	}
 
-	#slider .slick-arrow{
+	.slider .slick-arrow{
 		display: none !important;
 	}
 
@@ -242,6 +242,14 @@
 		padding-top: 30px;
 		width: 95%;
 	}
+
+	#card {
+		top: 10px;
+		.modal-dialog{
+			padding-top: 40px;
+			margin-top: 70px;
+		}
+	}
 }
 
 
@@ -253,11 +261,17 @@
 			font-size: 15px;
 		}
 	}
+
+	#card{
+		.card__price{
+			display: block;
+		}
+	}
 }
 
 
 @media (max-width: 450px){
-	#slider{
+	.slider{
 		.text{
 			width: 90%;
 			left: 5%;
@@ -295,6 +309,10 @@
 	.ya-share2__item{
 		margin-bottom: 5px !important;
 	}
+
+	.header__contacts{
+		padding-right: 15px;
+	}
 }
 
 
@@ -327,10 +345,25 @@
 }
 
 @media (max-width: 350px){
-	#card .modal-dialog{
-		padding-left: 15px;
-		padding-right: 15px;
+	#card{
+		.card__shortdesc,
+		.card__pic,
+		.card__text,
+		.card__address,
+		.qorder__form
+		{
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+		.modal-dialog{
+			padding-left: 0;
+			padding-right: 0;
+			padding-top: 30px;
+		}
 	}
+
+
+
 	#card .modal__body{
 		padding: 0;
 	}

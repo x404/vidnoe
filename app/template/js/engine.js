@@ -33,24 +33,35 @@ function sliderInit(){
 			  }
 			},
 			{
+			  breakpoint: 450,
+			  settings: {
+			    slidesToShow: 1,
+			    centerMode: true,
+			    centerPadding: '90px'
+			  }
+			},
+			{
 			  breakpoint: 430,
 			  settings: {
 			    slidesToShow: 1,
-			    centerPadding: '20px'
+			     centerMode: true,
+			    centerPadding: '80px'
 			  }
 			},
 			{
-			  breakpoint: 380,
+			  breakpoint: 390,
 			  settings: {
 			    slidesToShow: 1,
-			    centerPadding: '10px'
+			     centerMode: true,
+			    centerPadding: '60px'
 			  }
 			},
 			{
-			breakpoint: 350,
+			  breakpoint: 350,
 			  settings: {
 			    slidesToShow: 1,
-			    centerPadding: '15px'
+			    centerMode: true,
+			    centerPadding: '55px'
 			  }
 			}
 		]
